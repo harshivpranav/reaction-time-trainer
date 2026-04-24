@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Brain Speed Test</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div class="container">
+            <h1>⚡ Brain Speed Test</h1>
+            <p class="subtitle">Train your reflex & memory</p>
+
+            <div class="card menu">
+                <button onclick="startReflex()">⚡ Reflex Test</button>
+                <button onclick="startMemory()">🧠 Memory Game</button>
+            </div>
+
+            <div id="score">Best Score: 0</div>
+
+            <div id="gameArea" class="card game-area">
+                <div class="grid">
+                    <div class="tile green" onclick="handleTile(0)"></div>
+                    <div class="tile red" onclick="handleTile(1)"></div>
+                    <div class="tile yellow" onclick="handleTile(2)"></div>
+                    <div class="tile blue" onclick="handleTile(3)"></div>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
