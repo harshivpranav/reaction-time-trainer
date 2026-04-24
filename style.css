@@ -91,3 +91,53 @@ button:hover {
 .red { background: #dc3545; }
 .yellow { background: #ffc107; }
 .blue { background: #007bff; }
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+.hidden {
+    display: none;
+}
+
+#reflexBox {
+    padding: 60px;
+    border-radius: 20px;
+    font-size: 24px;
+}
+
+button {
+    transition: 0.2s;
+}
+button:hover {
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup {
+    background: #1e1e1e;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
